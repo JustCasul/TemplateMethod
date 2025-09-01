@@ -9,6 +9,10 @@ public abstract class Network {
 
    Network() {}
 
+   abstract boolean logIn(String userName, String password);
+   abstract boolean sendData(byte[] data);
+   abstract void logOut();
+   abstract void printLogo();
    /**
     * Publish the data to whatever network_example.network.
     */
@@ -23,10 +27,4 @@ public abstract class Network {
       }
       return false;
    }
-
-   abstract boolean logIn(String userName, String password);
-   abstract boolean sendData(byte[] data);
-   abstract void logOut();
-
-   abstract void printLogo();
 }
