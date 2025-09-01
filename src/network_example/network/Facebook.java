@@ -17,14 +17,15 @@ public class Facebook extends Network {
          System.out.print("*");
       }
       simulateNetworkLatency();
-      System.out.println("\n\nLogIn success on network_example.network.Facebook");
+      printLogo();
+      System.out.println("\n\nLogIn success on Facebook");
       return true;
    }
 
    public boolean sendData(byte[] data) {
       boolean messagePosted = true;
       if (messagePosted) {
-         System.out.println("Message: '" + new String(data) + "' was posted on network_example.network.Facebook");
+         System.out.println("Message: '" + new String(data) + "' was posted on Facebook");
          return true;
       } else {
          return false;
@@ -32,7 +33,22 @@ public class Facebook extends Network {
    }
 
    public void logOut() {
-      System.out.println("User: '" + userName + "' was logged out from network_example.network.Facebook");
+      System.out.println("User: '" + userName + "' was logged out from Facebook");
+   }
+
+   public void printLogo()
+   {
+      String logo = """
+            
+            
+              __
+             / _|
+            | |_
+            |  _|
+            | |
+            |_|
+            """;
+      System.out.println(logo);
    }
 
    private void simulateNetworkLatency() {
