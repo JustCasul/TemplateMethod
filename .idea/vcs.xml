@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="IssueNavigationConfiguration">
+    <option name="links">
+      <list>
+        <IssueNavigationLink>
+          <option name="issueRegexp" value="(KASE|KAS|ECOJ|ARCA|PORC|ANNA|MOBA|ORCA|BRI)\s*(-|_)\s*[0-9]+" />
+          <option name="linkRegexp" value="http://srvjira-and.shd.lan:8080/browse/$0" />
+        </IssueNavigationLink>
+      </list>
+    </option>
+  </component>
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+  </component>
+</project>
